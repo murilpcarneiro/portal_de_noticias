@@ -3,7 +3,7 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Um portal de notícias moderno sobre tecnologia desenvolvido como projeto de treinamento da **Rocketseat** para praticar HTML semântico e CSS Grid Layout.
+Um portal de notícias moderno sobre tecnologia desenvolvido como projeto de treinamento da **Rocketseat** para praticar HTML semântico, CSS Grid Layout e design responsivo.
 
 ## 🌟 Sobre o Projeto
 
@@ -25,6 +25,7 @@ Este projeto foi desenvolvido para praticar:
 - **CSS Grid Layout**: Layout utilizando CSS Grid
 - **Acessibilidade**: Implementação de atributos `alt` descritivos para todas as imagens
 - **Organização de CSS**: Modularização do CSS em arquivos separados
+- **Design Responsivo**: Interface adaptável para diferentes tamanhos de tela (Desktop, Tablet e Mobile)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -55,7 +56,8 @@ portal_de_noticias/
 │   ├── global.css         # Estilos globais
 │   ├── header.css         # Estilos do cabeçalho
 │   ├── sections.css       # Estilos das seções
-│   └── utility.css        # Classes utilitárias
+│   ├── utility.css        # Classes utilitárias
+│   └── responsive.css     # Media queries responsivas
 └── README.md              # Documentação do projeto
 ```
 
@@ -79,12 +81,13 @@ portal_de_noticias/
 
 ## 🎯 Funcionalidades
 
-- ✅ Layout com CSS Grid
+- ✅ Layout com CSS Grid responsivo
 - ✅ Cards de notícias interativos
 - ✅ Navegação por categorias
 - ✅ Imagens otimizadas com alt text descritivo
 - ✅ Tipografia moderna com Google Fonts
 - ✅ Estrutura semântica acessível
+- ✅ Suporte mobile first com breakpoints múltiplos
 
 ## 🚀 Como Executar
 
@@ -103,6 +106,17 @@ portal_de_noticias/
 3. **Abra o projeto**
    - Abra o arquivo `index.html` em seu navegador
    - Ou use uma extensão como Live Server no VS Code
+
+## 📱 Responsividade
+
+O projeto é totalmente responsivo com breakpoints otimizados:
+
+- **Desktop (> 1024px)**: Layout completo com sidebar e grid 2 colunas
+- **Tablet (769px - 1024px)**: Layout adaptado com 3 colunas no grid semanal
+- **Tablet Pequeno (601px - 768px)**: 2 colunas no grid, imagens menores
+- **Mobile (481px - 600px)**: Layout em coluna única com imagens reduzidas
+- **Mobile Pequeno (≤ 480px)**: Otimizado para dedo, navegação compacta
+- **Extra Small (≤ 360px)**: Ajustes máximos para compatibilidade
 
 ## 🎨 Paleta de Cores
 
@@ -126,10 +140,10 @@ O projeto utiliza uma paleta moderna focada em legibilidade:
 
 ### CSS Grid
 
-- `grid-template-columns` para definição de colunas
-- `grid-gap` para espaçamento entre elementos
-- `grid-flow-col` para direção do fluxo
-- `grid-cols-2` para layout de duas colunas
+- `grid-template-columns` para definição de colunas responsivas
+- `grid-template-areas` para layout baseado em áreas nomeadas
+- `grid-auto-flow: column` para direção do fluxo
+- Media queries para adaptação em diferentes resoluções
 
 ## 🤝 Contribuição
 

@@ -1,0 +1,472 @@
+/* Media Queries - Responsividade */
+
+/* Tablets e telas médias - até 1024px */
+@media (max-width: 64rem) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  main {
+    row-gap: 3.75rem;
+    column-gap: 1.5rem;
+  }
+
+  #weekly > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #ai img {
+    width: 8.75rem;
+  }
+}
+
+/* Tablets - até 768px */
+@media (max-width: 48rem) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'featured'
+      'weekly'
+      'ai'
+      'aside';
+    row-gap: 3.125rem;
+  }
+
+  header {
+    padding-top: 1rem;
+  }
+
+  #primary {
+    padding-block: 1rem;
+  }
+
+  #primary div {
+    gap: 0.375rem;
+  }
+
+  #secondary {
+    padding-block: 0.75rem;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+  }
+
+  #secondary a {
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  #featured {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #featured .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #featured .card figcaption {
+    padding: 1.25rem;
+  }
+
+  #featured .card figcaption h2 {
+    font-size: 0.875rem;
+  }
+
+  #weekly > div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #weekly img {
+    height: 8.75rem;
+  }
+
+  #weekly figure .content-tag {
+    padding: 0.25rem 0.5rem;
+  }
+
+  #ai {
+    width: 100%;
+  }
+
+  #ai article {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  #ai img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  #ai h3 {
+    font-size: 0.8125rem;
+    margin-block: 0.375rem 0.1875rem;
+  }
+
+  #ai .text-sm {
+    font-size: 0.8125rem;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  #ads {
+    margin-bottom: 1.5rem;
+  }
+
+  #ads img {
+    width: 100%;
+    height: auto;
+  }
+
+  #more article {
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem;
+  }
+
+  #more img {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+  }
+
+  #more h3 {
+    font-size: 0.8125rem;
+    margin-top: 0.25rem;
+  }
+
+  section header {
+    padding-block: 0.75rem 1rem;
+  }
+
+  section header h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares - até 600px */
+@media (max-width: 37.5rem) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  main {
+    row-gap: 2.5rem;
+  }
+
+  header {
+    padding-top: 0.75rem;
+  }
+
+  #primary {
+    padding-block: 0.75rem;
+  }
+
+  #primary div {
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+
+  #secondary {
+    padding-block: 0.625rem;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  #secondary a {
+    font-size: 0.6875rem;
+  }
+
+  #featured {
+    gap: 0.75rem;
+  }
+
+  #featured .card figcaption {
+    padding: 1rem;
+  }
+
+  #featured .card figcaption h2 {
+    font-size: 0.8125rem;
+  }
+
+  #weekly > div {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  #weekly img {
+    height: 7.5rem;
+  }
+
+  #weekly figure p {
+    font-size: 0.8125rem;
+  }
+
+  #ai article {
+    gap: 0.75rem;
+  }
+
+  #ai img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  #ai h3 {
+    font-size: 0.75rem;
+  }
+
+  #ai .text-sm {
+    font-size: 0.75rem;
+    display: none;
+  }
+
+  #more img {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  #more h3 {
+    font-size: 0.75rem;
+  }
+
+  section header {
+    padding-block: 0.625rem 0.75rem;
+  }
+
+  section header h3 {
+    font-size: 0.875rem;
+  }
+
+  section header a {
+    gap: 0.25rem;
+  }
+
+  section header span {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  .content-tag {
+    font-size: 0.5rem;
+    padding: 0.1875rem 0.375rem;
+  }
+
+  .text-2xl {
+    font-size: 1rem;
+    line-height: 130%;
+  }
+
+  .text-xl {
+    font-size: 0.75rem;
+  }
+
+  .text-sm {
+    font-size: 0.75rem;
+  }
+}
+
+/* Celulares pequenos - até 480px */
+@media (max-width: 30rem) {
+  .container {
+    padding-inline: 0.75rem;
+  }
+
+  main {
+    row-gap: 2rem;
+    margin-block: 1.5rem;
+  }
+
+  header {
+    padding-top: 0.5rem;
+  }
+
+  #primary {
+    padding-block: 0.625rem;
+  }
+
+  #primary div {
+    font-size: 0.6875rem;
+  }
+
+  #primary div strong {
+    display: none;
+  }
+
+  #secondary {
+    padding-block: 0.5rem;
+    gap: 0.375rem;
+  }
+
+  #secondary a {
+    font-size: 0.625rem;
+  }
+
+  #featured {
+    gap: 0.5rem;
+  }
+
+  #featured .card figcaption {
+    padding: 0.75rem;
+  }
+
+  #featured .card figcaption h2 {
+    font-size: 0.75rem;
+    line-height: 120%;
+  }
+
+  #weekly > div {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  #weekly img {
+    height: 6.25rem;
+  }
+
+  #weekly figure p {
+    font-size: 0.75rem;
+    line-height: 130%;
+  }
+
+  #ai article {
+    gap: 0.625rem;
+  }
+
+  #ai img {
+    width: 5rem;
+    height: 5rem;
+    min-width: 5rem;
+    flex-shrink: 0;
+  }
+
+  #ai h3 {
+    font-size: 0.6875rem;
+    margin-block: 0.25rem 0.125rem;
+  }
+
+  #ai .text-sm {
+    display: none;
+  }
+
+  #ai .content-tag {
+    font-size: 0.4375rem;
+  }
+
+  #ads {
+    margin-bottom: 1rem;
+  }
+
+  #ads img {
+    border-radius: 0.25rem;
+  }
+
+  #more article {
+    gap: 0.625rem;
+    align-items: flex-start;
+  }
+
+  #more img {
+    width: 3.75rem;
+    height: 3.75rem;
+    min-width: 3.75rem;
+    flex-shrink: 0;
+  }
+
+  #more h3 {
+    font-size: 0.6875rem;
+    margin-top: 0.125rem;
+    line-height: 130%;
+  }
+
+  section header {
+    padding-block: 0.5rem 0.625rem;
+    border-top: none;
+  }
+
+  section header h3 {
+    font-size: 0.8125rem;
+  }
+
+  section header a {
+    gap: 0.25rem;
+  }
+
+  section header span {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .content-tag {
+    font-size: 0.4375rem;
+    padding: 0.125rem 0.25rem;
+  }
+
+  .text-2xl {
+    font-size: 0.875rem;
+  }
+
+  .text-xl {
+    font-size: 0.6875rem;
+  }
+
+  .text-lg {
+    font-size: 0.6875rem;
+  }
+
+  .text-sm {
+    font-size: 0.6875rem;
+  }
+}
+
+/* Screens muito pequenas - até 360px */
+@media (max-width: 22.5rem) {
+  .container {
+    padding-inline: 0.5rem;
+  }
+
+  main {
+    row-gap: 1.5rem;
+  }
+
+  #primary div {
+    font-size: 0.625rem;
+  }
+
+  #secondary a {
+    font-size: 0.5625rem;
+  }
+
+  #featured .card figcaption {
+    padding: 0.5rem;
+  }
+
+  #featured .card figcaption h2 {
+    font-size: 0.6875rem;
+  }
+
+  #weekly img {
+    height: 5rem;
+  }
+
+  #ai img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  #more img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
