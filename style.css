@@ -177,3 +177,38 @@ figcaption {
     color: var(--text-color-primary);
   }
 }
+
+.mais-lidas-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  & h3 {
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+    line-height: var(--paragraph-height);
+    color: var(--text-color-primary);
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    & p {
+      font-size: var(--paragraph-size);
+      font-weight: var(--paragraph-weight);
+      line-height: var(--paragraph-height);
+      color: var(--text-color-secondary);
+    }
+
+    & img {
+      width: 0.75rem;
+      height: 0.75rem;
+      filter: invert(59%) sepia(83%) saturate(4473%) hue-rotate(203deg)
+        brightness(95%) contrast(101%);
+    }
+  }
+}
